@@ -1,8 +1,15 @@
-public class SortedNumber
+namespace PersistentSorter.Core
 {
-    public int Value { get; set; }
+    public class SortedNumber
+    {
+        public int Id { get; set; }
 
-    public int UnsortedOrder { get; set; }
+        public SortedSequence Sequence { get; set; }
 
-    public int SortedOrder { get; set; }
+        public int Value { get; set; }
+
+        public int UnsortedOrder { get; set; }
+
+        public int SortedOrder { get; set; }
+    }
 }

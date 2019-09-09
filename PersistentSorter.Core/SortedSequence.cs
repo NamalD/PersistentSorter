@@ -1,10 +1,15 @@
 using System.Collections.Generic;
 
-public class SortedSequence
+namespace PersistentSorter.Core
 {
-    public IEnumerable<SortedNumber> Numbers { get; set; }
+    public class SortedSequence
+    {
+        public int Id { get; set; }
 
-    public SortDirection SortDirection { get; set; }
+        public IEnumerable<SortedNumber> Numbers { get; set; }
 
-    public int TimeTakenMilliseconds { get; set; }
+        public SortDirection SortDirection { get; set; }
+
+        public int TimeTakenMilliseconds { get; set; }
+    }
 }

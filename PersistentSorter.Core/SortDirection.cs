@@ -1,5 +1,8 @@
-public enum SortDirection
+namespace PersistentSorter.Core
 {
-    Ascending,
-    Descending,
+    public enum SortDirection
+    {
+        Ascending,
+        Descending,
+    }
 }
