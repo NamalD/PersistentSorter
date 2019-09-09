@@ -2,7 +2,20 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="input-group">
+    <div class="input-group-prepend">
+        <span class="input-group-text">Number</span>
+    </div>
+    <input type="number">
+    <div class="input-group-append">
+        <button class="btn btn-outline-primary" type="button" id="addNumber">+</button>
+    </div>
 </div>
+
+@section Scripts {
+    <script type="text/javascript">
+        $(addNumber).click(function () {
+            alert('ready');
+        });
+    </script>
+}
